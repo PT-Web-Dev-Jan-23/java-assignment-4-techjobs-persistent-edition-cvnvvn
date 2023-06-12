@@ -20,7 +20,6 @@ import java.util.HashMap;
 @RequestMapping(value = "list")
 public class ListController {
 
-//    Part 4.4 Many2Many Add @Autowired fields for employerRepos and skillRepos
     @Autowired
     private EmployerRepository employerRepository;
 
@@ -42,8 +41,6 @@ public class ListController {
 
     @RequestMapping("")
     public String list(Model model) {
-//        Part 4.4 ManyToMany -List It and Re-Search It
-//                *  Add model attributes for both employerRepository & skillRepository below to display in templates/list.html */
         model.addAttribute("employers", employerRepository.findAll());
         model.addAttribute("skills", skillRepository.findAll());
         return "list";

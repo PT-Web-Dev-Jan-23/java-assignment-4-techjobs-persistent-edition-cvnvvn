@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Optional;
 
-//spilt screen to compare SkillController to completed EmployerController
 @Controller
 @RequestMapping("skills")
 public class SkillController {
